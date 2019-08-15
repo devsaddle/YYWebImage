@@ -10,7 +10,6 @@
 //
 
 #import "YYImageCache.h"
-#import "YYImage.h"
 #import "UIImage+YYWebImage.h"
 
 #if __has_include(<YYImage/YYImage.h>)

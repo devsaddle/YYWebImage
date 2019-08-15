@@ -12,8 +12,13 @@
 #import "YYWebImageManager.h"
 #import "YYImageCache.h"
 #import "YYWebImageOperation.h"
-#import "YYImageCoder.h"
 #import <objc/runtime.h>
+
+#if __has_include( <YYImage/YYImageCoder.h>)
+#import <YYImage/YYImageCoder.h>
+#else
+#import "YYImageCoder.h"
+#endif
 
 #define kNetworkIndicatorDelay (1/30.0)
 
